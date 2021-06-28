@@ -25,4 +25,4 @@ ans.: A primeira instrução carrega o valor 0x55 no registrador zero.
       A 3.ª instrução carrega o valor de R1 (0x550000) deslocado 8 bits para a direita (0x5500) para R2.
       A 4.ª instrução carrega o valor de R2 (0x5500) dividido por 4 (equivalente ao deslocamento de 4 bits para a direita) para R3.
       A 5.ª instrução rotaciona os 2 LSB do R3 (0x550) da direita para esquerda (o valor é deslocado 2bits para a direita e os 2 LSB originais agora são os 2 MSB do novo valor := 0x154) e armazena o resultado em R4.
-      A 6.ª instrução rotaciona um bit da direita para a esquerda (o valor é deslocado 1 bit p/ direita e o LSB vira MSB) e caso a flag C do APSR esteja settada, o seu valor é inserido no 32.º bit do registrador de destino.
+      A 6.ª instrução desloca o valor de R4 1 bit para a direita, armazena o resultado em R5 juntamente com o valor da flag C do APSR no 32.º bit do registrador de destino (R5).
